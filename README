@@ -1,0 +1,7 @@
+Poll the touchpad every 25ms and calculate the touch distance. The touch distance determines whether a soft key is touched or not. If a soft key is touch then a message is sent to a user. Basic part of the lab is to create 4 soft keys on the touch pad.
+
+Two threads are used.
+
+TouchDetect: Polls the touchpad every 25ms, creates press events.
+
+TouchConsumes: uses the press events, waits for the events to happen and sends a message to the user according to the softkey pressed.
